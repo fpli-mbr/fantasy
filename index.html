@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link rel="icon" href="moogle.jpg">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<style>
+	html {
+		cursor: url(cursor.png), auto;
+	}
+	
+	body {
+		color: white;
+		background: black;
+		font-family: "Press Start 2P", monospace;
+		margin: 0;
+		line-height: 1.5;
+		text-align: center;
+	}
+	
+	pre {
+		font-family: "Press Start 2P", monospace;
+		font-size: 15px;
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	.box {
+		float: left;
+		display: inline-block;
+		background: linear-gradient(to bottom, #7B7BD6, #000039);
+		padding: 2rem 1.5rem 1.5rem;
+		border: 6px solid #DEE5E5;
+		border-radius: 8px;
+		box-shadow: 2px 3px 15px rgba(0, 10, 20, .8);
+	}
+	
+	.box::after,
+	.box::before {
+		display: block;
+		clear: both;
+		content: '';
+	}
+	
+	.enter {
+		min-width: 90%;
+	}
+	
+	.name {
+		margin-left: 5% !important;
+		min-width: 80%;
+	}
+	
+	.select {
+		min-width: 90%;
+	}
+	
+	h1 {
+		font-size: 14px;
+	}
+	
+	@media screen and (min-width: 400px) {
+		h1 {
+			font-size: 18px;
+		}
+		pre {
+			font-size: 16px;
+		}
+	}
+	
+	@media screen and (min-width: 600px) {
+		body {
+			padding: 1rem;
+		}
+		aside {
+			position: absolute;
+			left: 1rem;
+			top: 1rem;
+			width: 250px;
+			height: 100%;
+		}
+		main {
+			margin-left: 255px;
+		}
+		h1 {
+			font-size: 24px;
+		}
+		pre {
+			font-size: 20px;
+		}
+		.box {
+			margin: 0;
+		}
+		.avatar {
+			float: left;
+			max-width: 200px;
+			width: 200px;
+			height: 200px;
+		}
+	}
+	
+	@media screen and (min-width: 800px) {
+		h1 {
+			font-size: 28px;
+		}
+		pre {
+			font-size: 24px;
+		}
+	}
+
+</style>
+
+<body>
+	<aside>
+		<div class="avatar box">
+			<img src="tania.jpeg" alt="Tania">
+		</div>
+	</aside>
+	<main>
+		<div class="enter box">
+			<h1>Please enter a name.</h1>
+		</div>
+
+		<div class="name box">
+			<h1>TANIA</h1>
+		</div>
+
+		<div class="select box">
+			<pre>A B C D E  a b c d e
+F G H I J  f g h i j
+K L M N O  k l m n o
+P Q R S T  p q r s t
+U V W X Y  u v w x y
+Z ! ? / :  z ” ’ - .
+0 1 2 3 4  5 6 7 8 9</pre>
+		</div>
+	</main>
+
+</body>
+
+</html>
